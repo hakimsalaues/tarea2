@@ -1,0 +1,257 @@
+.derechos {
+  font-family: "Madimi One", sans-serif;
+  font-size: 15px;
+  color: #E6E6DD;
+  background-color: #6DA4A3;
+  text-align: center;
+  display: block;
+  padding: 10px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 80px; /* Espacio entre las imágenes */
+  max-width: 800px; /* Ajustar tamaño máximo de las imágenes */
+  height: auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 0 auto;
+}
+.contenedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: auto; /* Mantener la relación de aspecto */
+}
+
+.links {
+  font-family: "Madimi One", sans-serif;
+  font-size: 30px;
+  color: #E6E6DD;
+  background-color: #6DA4A3;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  margin-left: -40px;
+  transition: transform 0.2s, background-color 0.2s, color 0.2s;
+}
+.links:hover {
+  transform: scale(1.1); /* Escala el enlace al 110% en el hover */
+  background-color: #6DA4A3; /* Reduce el brillo del color de fondo en el hover */
+  color: #fcfcfa; /* Aclara el color del texto en el hover */
+}
+
+.dropdown-toggle {
+  position: relative;
+  transition: transform 0.5s ease; /* Transición suave para el efecto de escala */
+}
+
+.dropdown-toggle:hover {
+  transform: scale(1.1); /* Escala el texto al 110% en el hover */
+  z-index: 1; /* Asegura que el texto esté por encima de otros elementos */
+}
+
+.dropdown-toggle::after {
+  transition: transform 0.5s ease; /* Agrega una transición suave al icono de flecha */
+}
+
+.dropdown-toggle:hover::after {
+  transform: rotate(180deg); /* Hace que la flecha rote al pasar el cursor sobre el botón */
+}
+
+/* personalizacion boton hamburguesa */
+.navbar-toggler-icon {
+  transition: transform 0.3s ease; /* Agrega una transición suave al icono */
+}
+
+.navbar-toggler-icon:hover {
+  transform: scale(1.2); /* Hace que el icono se agrande al pasar el cursor sobre él */
+}
+
+/* navbar customization */
+.bg-color-custom {
+  font-family: "Madimi One", sans-serif;
+  background-color: #6DA4A3 !important;
+  color: #E6E6DD;
+  margin-top: auto;
+}
+
+.dropdown-menu a.dropdown-item:hover {
+  transition: transform 0.3s;
+  transform: scale(1.1);
+  background-color: #6DA4A3;
+  color: white;
+}
+.navbar-nav .nav-item .nav-link.active {
+  font-family: "Madimi One", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #E6E6DD;
+  background-color: #6DA4A3;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.navbar-brand {
+  font-family: "Madimi One", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: #E6E6DD;
+  text-decoration: none;
+  margin: auto;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.nav-item.dropdown .nav-link {
+  font-family: "Madimi One", sans-serif;
+  font-size: 35px;
+  color: #E6E6DD;
+  margin: auto;
+  margin-left: auto;
+  background-color: #6DA4A3;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-left: 25px;
+  transition: background-color 0.3s ease;
+}
+.navbar-nav .nav-item .nav-link.active {
+  color: #E6E6DD;
+}
+.pagina-productos {
+  background-color: #6DA4A3;
+}
+
+/* menu de productos de la pagina y efecto hover*/
+.select-prod select {
+  padding: 10px;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #418793;
+  width: 400px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.select-prod select:hover {
+  background-color: #6DA4A3;
+  cursor: pointer;
+}
+.select-prod select option:hover {
+  font-size: 20px;
+  background-color: #f9f9f9;
+  transform: scale(1.2); /* Aumenta el tamaño del texto */
+}
+
+body {
+  font-family: "Madimi One", sans-serif;
+  background-color: #7baabf;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #006064;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.producto-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  padding: 1em;
+}
+
+.producto-item {
+  background-color: #005662;
+  padding: 1em;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.producto-item img {
+  max-width: 100%;
+  border-radius: 0.5em;
+}
+
+.price {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  margin-top: 20px;
+  color: #333;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-controls button {
+  background-color: #004d40;
+  color: #fff;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.quantity-controls input {
+  width: 50px;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+
+.totals {
+  text-align: center;
+  margin: 100px;
+}
+
+.totals h3 {
+  margin-top: auto;
+}
+
+.product-totals {
+  margin-bottom: 1em;
+  margin: auto;
+}
+
+#confirmPurchase {
+  padding: 0.5em 1em;
+  background-color: #004d40;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.totals button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 90px;
+}
